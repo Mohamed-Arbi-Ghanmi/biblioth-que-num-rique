@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #007BFF;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.navbar-links a:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content Styling */
+.main-content {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Search Bar Styling */
+form.search-bar {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+form.search-bar input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form.search-bar button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Books Grid Styling for userDashboard */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.book-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.book-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.book-card p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    height: 45px; /* Fixed height for text */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.book-card a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.book-card a:hover {
+    background-color: #0056b3;
+}
+
+/* Borrowed Books Table Styling */
+.books-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.books-table th, .books-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.books-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+}
+
+.books-table td {
+    color: #555;
+}
+
+.books-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.books-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.books-table .btn {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+}
+
+.books-table .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    }
+
+    .books-table th, .books-table td {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .books-grid {
+        grid-template-columns: 1fr; /* Single column for mobile devices */
+    }
+
+    form.search-bar input[type="text"] {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .book-card {
+        text-align: center;
+    }
+
+    form.search-bar input[type="text"] {
+        width: 90%;
+    }
+
+    .books-table th, .books-table td {
+        font-size: 12px;
+    }
+}

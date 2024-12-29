@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Set default text color */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #007BFF;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.navbar-links a:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content Styling */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Loans Table Styling */
+.loans-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.loans-table th, .loans-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.loans-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.loans-table tr:nth-child(even) {
+    background-color: #f9f9fb;
+}
+
+.loans-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.loans-table td a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.loans-table td a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons Styling */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

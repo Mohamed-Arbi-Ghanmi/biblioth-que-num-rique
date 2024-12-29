@@ -1,0 +1,132 @@
+/* Reset CSS */
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Set default text color */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #007BFF;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.navbar-links a:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content Styling */
+.main-content {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Book Details Styling */
+.book-details h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.book-details p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.book-details p strong {
+    font-weight: bold;
+}
+
+/* Action Buttons Styling */
+button , .download {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+button:hover, .download:hover {
+    background-color: #0056b3;
+}
+
+/* Notification Box Styling */
+.notification {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    display: none;
+}
+
+/* Success Message */
+.success {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Error Message */
+.error {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .book-details h2 {
+        font-size: 24px;
+    }
+
+    .book-details p {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
