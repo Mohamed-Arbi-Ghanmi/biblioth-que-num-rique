@@ -1,1 +1,2 @@
-# biblioth-que-num-rique
+Le Système de Gestion de Bibliothèque est conçu pour gérer efficacement les ressources de la bibliothèque et offrir une expérience utilisateur fluide, tant pour les administrateurs que pour les utilisateurs. Le système intègre des
+fonctionnalités telles que la gestion des livres, la gestion des utilisateurs, l’emprunt et le retour des livres, ainsi que la génération de rapports informatifs pour faciliter les opérations de la bibliothèque.
